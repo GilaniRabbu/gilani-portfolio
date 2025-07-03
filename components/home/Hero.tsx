@@ -40,17 +40,17 @@ export default function Hero() {
 
           {/* Technology icons */}
           <div className="flex items-center space-x-4 pt-4">
-            <div className="w-8 h-8 bg-indigo-700 rounded-full flex items-center justify-center">
-              <FaGithub className="w-4 h-4 text-gray-300" />
+            <div className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center">
+              <FaGithub className="w-4 h-4 text-white" />
             </div>
-            <div className="w-8 h-8 bg-indigo-700 rounded-full flex items-center justify-center">
-              <FaLinkedinIn className="w-4 h-4 text-gray-300" />
+            <div className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center">
+              <FaLinkedinIn className="w-4 h-4 text-white" />
             </div>
-            <div className="w-8 h-8 bg-indigo-700 rounded-full flex items-center justify-center">
+            <div className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center">
               <FaXTwitter className="w-4 h-4 text-white" />
             </div>
-            <div className="w-8 h-8 bg-indigo-700 rounded-full flex items-center justify-center">
-              <FaMastodon className="w-4 h-4 text-gray-300" />
+            <div className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center">
+              <FaMastodon className="w-4 h-4 text-white" />
             </div>
           </div>
         </div>

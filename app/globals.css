@@ -47,15 +47,17 @@
   }
 }
 
-/* Number input fix */
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+.mail-btn {
+  color: lightsalmon;
+  border-color: lightsalmon;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
 }
 
-input[type="number"] {
-  -moz-appearance: textfield;
+.mail-btn:hover {
+  transform: scaleX(1.1);
+  -webkit-text-fill-color: dodgerblue;
+  border-color: dodgerblue;
 }
 
 @theme inline {

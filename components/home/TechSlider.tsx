@@ -1,31 +1,52 @@
 "use client";
 import Marquee from "react-fast-marquee";
-import { FaReact, FaNodeJs } from "react-icons/fa";
 import {
-  SiNextdotjs,
+  FaHtml5,
+  FaCss3Alt,
+  FaBootstrap,
+  FaReact,
+  FaNodeJs,
+  FaFigma,
+  FaGithub,
+  FaGitAlt,
+} from "react-icons/fa";
+import {
   SiTailwindcss,
+  SiNextdotjs,
   SiExpress,
   SiMongodb,
+  SiTypescript,
+  SiJavascript,
+  SiRedux,
+  SiFirebase,
+  SiJquery,
 } from "react-icons/si";
 
+const LogoColor = "#61DBFB";
+
 const techStack = [
-  { name: "React", icon: <FaReact size={50} color="#61DBFB" /> },
-  { name: "Next.js", icon: <SiNextdotjs size={50} color="#ffffff" /> },
-  { name: "Tailwind CSS", icon: <SiTailwindcss size={50} color="#38BDF8" /> },
-  { name: "Node.js", icon: <FaNodeJs size={50} color="#68A063" /> },
-  { name: "Express", icon: <SiExpress size={50} color="#ffffff" /> },
-  { name: "MongoDB", icon: <SiMongodb size={50} color="#47A248" /> },
-  { name: "React", icon: <FaReact size={50} color="#61DBFB" /> },
-  { name: "Next.js", icon: <SiNextdotjs size={50} color="#ffffff" /> },
-  { name: "Tailwind CSS", icon: <SiTailwindcss size={50} color="#38BDF8" /> },
-  { name: "Node.js", icon: <FaNodeJs size={50} color="#68A063" /> },
-  { name: "Express", icon: <SiExpress size={50} color="#ffffff" /> },
-  { name: "MongoDB", icon: <SiMongodb size={50} color="#47A248" /> },
+  { name: "HTML", icon: <FaHtml5 size={50} color={LogoColor} /> },
+  { name: "CSS", icon: <FaCss3Alt size={50} color={LogoColor} /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss size={50} color={LogoColor} /> },
+  { name: "Bootstrap", icon: <FaBootstrap size={50} color={LogoColor} /> },
+  { name: "Javascript", icon: <SiJavascript size={50} color={LogoColor} /> },
+  { name: "Jquery", icon: <SiJquery size={50} color={LogoColor} /> },
+  { name: "React", icon: <FaReact size={50} color={LogoColor} /> },
+  { name: "Next.js", icon: <SiNextdotjs size={50} color={LogoColor} /> },
+  { name: "Typescript", icon: <SiTypescript size={50} color={LogoColor} /> },
+  { name: "Redux", icon: <SiRedux size={50} color={LogoColor} /> },
+  { name: "Node.js", icon: <FaNodeJs size={50} color={LogoColor} /> },
+  { name: "Express", icon: <SiExpress size={50} color={LogoColor} /> },
+  { name: "MongoDB", icon: <SiMongodb size={50} color={LogoColor} /> },
+  { name: "Figma", icon: <FaFigma size={50} color={LogoColor} /> },
+  { name: "Git", icon: <FaGitAlt size={50} color={LogoColor} /> },
+  { name: "Github", icon: <FaGithub size={50} color={LogoColor} /> },
+  { name: "Firebase", icon: <SiFirebase size={50} color={LogoColor} /> },
 ];
 
-const TechSlider = () => {
+export default function TechSlider() {
   return (
-    <div className="bg-black text-white py-10 px-6 md:px-16">
+    <div className="bg-gray-800 text-white py-10 px-6 md:px-16">
       <div className="w-full max-w-5xl mx-auto flex items-center justify-between gap-10">
         <Marquee gradient={false} speed={60}>
           {techStack.map((tech, index) => (
@@ -38,6 +59,4 @@ const TechSlider = () => {
       </div>
     </div>
   );
-};
-
-export default TechSlider;
+}

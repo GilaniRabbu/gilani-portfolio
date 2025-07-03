@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const poppins = Poppins({
+const geist = Geist_Mono({
   weight: ["500"],
   subsets: ["latin"],
 });
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} antialiased`}>{children}</body>
+      <body className={`${geist.className} antialiased`}>{children}</body>
     </html>
   );
 }
