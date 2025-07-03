@@ -1,4 +1,9 @@
-import { Code, Database, Globe, Settings } from "lucide-react";
+import {
+  FaGithub,
+  FaXTwitter,
+  FaLinkedinIn,
+  FaMastodon,
+} from "react-icons/fa6";
 
 export default function Hero() {
   return (
@@ -8,7 +13,7 @@ export default function Hero() {
           {/* Greeting with HTML tags */}
           <div className="text-lg">
             <span className="text-orange-400">{"<span>"}</span>
-            <span className="ml-2">Hey, I&apos;m John</span>
+            <span className="ml-2">Hey, I&apos;m Gilani</span>
             <span className="text-orange-400 ml-2">{"</span>"}</span>
           </div>
 
@@ -35,17 +40,17 @@ export default function Hero() {
 
           {/* Technology icons */}
           <div className="flex items-center space-x-4 pt-4">
-            <div className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center">
-              <Globe className="w-4 h-4 text-gray-300" />
+            <div className="w-8 h-8 bg-indigo-700 rounded-full flex items-center justify-center">
+              <FaGithub className="w-4 h-4 text-gray-300" />
             </div>
-            <div className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center">
-              <Code className="w-4 h-4 text-gray-300" />
+            <div className="w-8 h-8 bg-indigo-700 rounded-full flex items-center justify-center">
+              <FaLinkedinIn className="w-4 h-4 text-gray-300" />
             </div>
-            <div className="w-8 h-8 bg-teal-500 rounded-full flex items-center justify-center">
-              <Database className="w-4 h-4 text-white" />
+            <div className="w-8 h-8 bg-indigo-700 rounded-full flex items-center justify-center">
+              <FaXTwitter className="w-4 h-4 text-white" />
             </div>
-            <div className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center">
-              <Settings className="w-4 h-4 text-gray-300" />
+            <div className="w-8 h-8 bg-indigo-700 rounded-full flex items-center justify-center">
+              <FaMastodon className="w-4 h-4 text-gray-300" />
             </div>
           </div>
         </div>
