@@ -9,6 +9,7 @@ import {
   FaFigma,
   FaGithub,
   FaGitAlt,
+  FaJs,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
@@ -16,7 +17,6 @@ import {
   SiExpress,
   SiMongodb,
   SiTypescript,
-  SiJavascript,
   SiRedux,
   SiFirebase,
   SiJquery,
@@ -29,7 +29,7 @@ const techStack = [
   { name: "CSS", icon: <FaCss3Alt size={50} color={LogoColor} /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss size={50} color={LogoColor} /> },
   { name: "Bootstrap", icon: <FaBootstrap size={50} color={LogoColor} /> },
-  { name: "Javascript", icon: <SiJavascript size={50} color={LogoColor} /> },
+  { name: "Javascript", icon: <FaJs size={50} color={LogoColor} /> },
   { name: "Jquery", icon: <SiJquery size={50} color={LogoColor} /> },
   { name: "React", icon: <FaReact size={50} color={LogoColor} /> },
   { name: "Next.js", icon: <SiNextdotjs size={50} color={LogoColor} /> },
