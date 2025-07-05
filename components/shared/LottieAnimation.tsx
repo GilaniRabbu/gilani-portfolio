@@ -13,7 +13,7 @@ export default function LottieAnimation() {
 
   return (
     <>
-      <div className="">
+      <div>
         <div className="w-full">{View}</div>
       </div>
     </>

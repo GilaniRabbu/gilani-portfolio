@@ -4,19 +4,45 @@ import {
   FaLinkedinIn,
   FaMastodon,
 } from "react-icons/fa6";
-import LottieAnimation from "../shared/LottieAnimation";
+import Link from "next/link";
+import LottieAnimation from "@/components/shared/LottieAnimation";
+import ContainerWrapper from "@/components/common/ContainerWrapper";
 
 export default function Hero() {
+  const socialIcons = [
+    {
+      id: 1,
+      href: "https://github.com/GilaniRabbu",
+      icon: <FaGithub className="w-4 h-4 text-white" />,
+    },
+    {
+      id: 2,
+      href: "https://www.linkedin.com/in/toufiq-gilani-rabbu",
+      icon: <FaLinkedinIn className="w-4 h-4 text-white" />,
+    },
+    {
+      id: 3,
+      href: "https://x.com/GilaniRabbu",
+      icon: <FaXTwitter className="w-4 h-4 text-white" />,
+    },
+    {
+      id: 4,
+      href: "https://mastodon.social/@GilaniRabbu",
+      icon: <FaMastodon className="w-4 h-4 text-white" />,
+    },
+  ];
+
   return (
-    <div className="min-h-screen bg-[#111111] text-white p-8 flex items-center justify-center">
-      <div className="max-w-4xl w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="flex justify-center w-1/4">
+    <div className="min-h-screen bg-[#111111] text-white py-10 lg:px-10 flex items-center justify-center">
+      <ContainerWrapper>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+          {/* Lottie Animation */}
+          <div className="flex justify-center">
             <LottieAnimation />
           </div>
-          <div className="space-y-6 w-3/4">
+          <div className="space-y-6">
             {/* Greeting with HTML tags */}
-            <div className="text-lg">
+            <div className="sm:text-lg">
               <span className="text-orange-400">{"<span>"}</span>
               <span className="ml-2">Hey, I&apos;m Gilani</span>
               <span className="text-orange-400 ml-2">{"</span>"}</span>
@@ -24,17 +50,17 @@ export default function Hero() {
 
             {/* Main heading */}
             <div className="space-y-2">
-              <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+              <h1 className="text-4xl sm:text-5xl font-bold leading-tight">
                 I&apos;m A{" "}
                 <span className="text-teal-400">{"{Full Stack}"}</span>
               </h1>
-              <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+              <h1 className="text-4xl sm:text-5xl font-bold leading-tight">
                 Web Developer<span className="text-teal-400">_</span>
               </h1>
             </div>
 
             {/* Description paragraph */}
-            <div className="text-gray-400 text-lg max-w-3xl">
+            <div className="text-gray-400 sm:text-lg max-w-3xl">
               <span className="text-orange-400">{"<p>"}</span>
               <span className="ml-2">
                 With expertise in modern frontend technologies like React,
@@ -46,22 +72,21 @@ export default function Hero() {
 
             {/* Technology icons */}
             <div className="flex items-center space-x-4 pt-4">
-              <div className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center">
-                <FaGithub className="w-4 h-4 text-white" />
-              </div>
-              <div className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center">
-                <FaLinkedinIn className="w-4 h-4 text-white" />
-              </div>
-              <div className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center">
-                <FaXTwitter className="w-4 h-4 text-white" />
-              </div>
-              <div className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center">
-                <FaMastodon className="w-4 h-4 text-white" />
-              </div>
+              {socialIcons.map(({ id, icon, href }) => (
+                <Link
+                  href={href}
+                  key={id}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center"
+                >
+                  {icon}
+                </Link>
+              ))}
             </div>
           </div>
         </div>
-      </div>
+      </ContainerWrapper>
     </div>
   );
 }
