@@ -1,4 +1,3 @@
-"use client";
 import Marquee from "react-fast-marquee";
 import {
   FaHtml5,
@@ -20,9 +19,10 @@ import {
   SiRedux,
   SiFirebase,
   SiJquery,
+  SiFramer,
 } from "react-icons/si";
 
-const LogoColor = "#61DBFB";
+const LogoColor = "#0084D1";
 
 const techStack = [
   { name: "HTML", icon: <FaHtml5 size={50} color={LogoColor} /> },
@@ -39,6 +39,7 @@ const techStack = [
   { name: "Express", icon: <SiExpress size={50} color={LogoColor} /> },
   { name: "MongoDB", icon: <SiMongodb size={50} color={LogoColor} /> },
   { name: "Figma", icon: <FaFigma size={50} color={LogoColor} /> },
+  { name: "Framer", icon: <SiFramer size={50} color={LogoColor} /> },
   { name: "Git", icon: <FaGitAlt size={50} color={LogoColor} /> },
   { name: "Github", icon: <FaGithub size={50} color={LogoColor} /> },
   { name: "Firebase", icon: <SiFirebase size={50} color={LogoColor} /> },
@@ -46,7 +47,7 @@ const techStack = [
 
 export default function TechSlider() {
   return (
-    <div className="bg-gray-800 text-white py-10 px-6 md:px-16">
+    <div className="bg-[#111111] text-white py-10 px-8 md:px-16">
       <div className="w-full max-w-5xl mx-auto flex items-center justify-between gap-10">
         <Marquee gradient={false} speed={60}>
           {techStack.map((tech, index) => (

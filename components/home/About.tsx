@@ -1,13 +1,13 @@
-import DownloadButton from "../shared/DownloadButton";
-import GithubButton from "../shared/GithubButton";
+import DownloadButton from "@/components/shared/DownloadButton";
+import GithubButton from "@/components/shared/GithubButton";
 
 export default function About() {
   return (
-    <div className="min-h-screen grid place-items-center">
+    <div className="py-10 lg:px-10 bg-[#111111]">
       <div className="max-w-4xl mx-auto p-5">
         <div className="space-y-6">
-          <h1 className="text-4xl font-bold text-gray-900">About me.</h1>
-          <div className="space-y-4 leading-relaxed text-balance text-gray-700">
+          <h1 className="text-4xl font-bold text-teal-400">About me.</h1>
+          <div className="space-y-4 leading-relaxed text-balance text-white">
             <p>
               👋 Hello! My name is Md. Toufiq Gilani Rabbu, a Full Stack Web
               Developer with expertise in building dynamic, functional,
