@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import {
   FaGithub,
@@ -42,10 +43,10 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="py-8 px-4 flex flex-col items-center gap-5 overflow-hidden bg-gray-900 text-white">
+    <footer className="py-10 px-5 flex flex-col items-center gap-5 overflow-hidden bg-[#111111] text-white">
       <div className="flex flex-wrap justify-center gap-1">
         {footerLinks.map((link) => (
-          <a
+          <Link
             key={link.id}
             href={link.link}
             target="_blank"
@@ -54,17 +55,9 @@ export default function Footer() {
           >
             <span className="sr-only">Social Links</span>
             {link.icon}
-          </a>
+          </Link>
         ))}
       </div>
-      {/* <div>
-        <Link
-          href="mailto:toufiqjilanirabbu7@gmail.com"
-          className="inline-block text-center text-3xl font-bold break-all text-white"
-        >
-          toufiqjilanirabbu7@gmail.com
-        </Link>
-      </div> */}
       <p className="text-center text-2xl">
         Gilani © {new Date().getFullYear()}
       </p>

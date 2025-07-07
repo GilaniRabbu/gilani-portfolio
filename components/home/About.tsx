@@ -6,7 +6,9 @@ export default function About() {
     <div className="py-10 lg:px-10 bg-[#111111]">
       <div className="max-w-4xl mx-auto p-5">
         <div className="space-y-6">
-          <h1 className="text-4xl font-bold text-teal-400">About me.</h1>
+          <h1 className="text-6xl font-bold text-transparent text-stroke">
+            About me.
+          </h1>
           <div className="space-y-4 leading-relaxed text-balance text-white">
             <p>
               👋 Hello! My name is Md. Toufiq Gilani Rabbu, a Full Stack Web
