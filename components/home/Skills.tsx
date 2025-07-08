@@ -147,7 +147,7 @@ export default function Skills() {
                       <span className="text-green-400">{"{"}</span>
                     </div>
 
-                    <div className="flex flex-wrap gap-3 ml-4 mb-2">
+                    <div className="flex flex-col gap-3 ml-4 mb-2">
                       {items.map((tech) => {
                         const IconComponent = tech.icon;
                         return (
