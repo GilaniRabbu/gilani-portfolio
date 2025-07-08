@@ -66,23 +66,26 @@ export default function Skills() {
       <ContainerWrapper>
         <div className="space-y-5 text-left md:text-center mb-10 text-white">
           <h2 className="text-3xl">Skills Of Mine</h2>
-          <p className="max-w-md md:mx-auto">
+          <p className="max-w-lg md:mx-auto">
             I work with modern tools like React, Next.js, TypeScript, and
             Tailwind CSS to deliver responsive, accessible, and polished user
             experiences.
           </p>
-          <p className="max-w-md md:mx-auto">
+          <p className="max-w-lg md:mx-auto">
             Whether it&apos;s integrating a headless CMS, managing state, or
             building reusable UI components — I focus on writing clean,
             maintainable code that scales.
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-5">
+        <div className="container mx-auto">
+          <IconCloudSlug />
+        </div>
+        <div className="">
           <TooltipProvider>
-            <div className="space-y-8 order-2 lg:order-1 w-full lg:w-1/2">
+            <div className="space-y-8">
               {Object.entries(technologies).map(([section, items]) => (
                 <div key={section}>
-                  <h3 className="text-xl font-semibold capitalize mb-4">
+                  <h3 className="text-xl font-semibold capitalize mb-4 text-white">
                     {section}
                   </h3>
                   <div className="flex flex-wrap gap-5">
@@ -113,9 +116,6 @@ export default function Skills() {
               ))}
             </div>
           </TooltipProvider>
-          <div className="container mx-auto order-1 lg:order-2 w-full lg:w-1/2">
-            <IconCloudSlug />
-          </div>
         </div>
       </ContainerWrapper>
     </section>

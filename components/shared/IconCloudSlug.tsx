@@ -48,7 +48,7 @@ export default function IconCloudSlug() {
 
   return (
     <div className="relative flex size-full items-center justify-center overflow-hidden">
-      <IconCloud images={images} color="#151515" />
+      <IconCloud images={images} color="#FFF" />
     </div>
   );
 }
