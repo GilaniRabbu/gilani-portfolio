@@ -1,13 +1,15 @@
-import React from "react";
-import Card from "../shared/Card";
+import ContainerWrapper from "@/components/common/ContainerWrapper";
+import PortfolioCard from "@/components/shared/PortfolioCard";
 
 const Portfolio: React.FC = () => {
   return (
-    <div className="min-h-screen py-10 px-4" id="portfolio">
-      <div className="container mx-auto">
-        <h2 className="text-center mb-10 text-3xl">My Projects</h2>
-        <Card />
-      </div>
+    <div className="py-10 bg-[#111111]">
+      <ContainerWrapper>
+        <h2 className="text-4xl text-center mb-10 text-green-500">
+          My Projects
+        </h2>
+        <PortfolioCard />
+      </ContainerWrapper>
     </div>
   );
 };
