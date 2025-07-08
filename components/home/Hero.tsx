@@ -60,7 +60,7 @@ export default function Hero() {
             </div>
 
             {/* Description paragraph */}
-            <div className="text-gray-200 sm:text-lg max-w-3xl">
+            <div className="text-gray-300 sm:text-lg max-w-3xl">
               <span className="text-orange-400">{"<p>"}</span>
               <span className="ml-2">
                 With expertise in modern frontend technologies like React,

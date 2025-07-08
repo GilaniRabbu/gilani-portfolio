@@ -6,8 +6,8 @@ export default function About() {
     <div className="py-10 lg:px-10 bg-[#111111]">
       <div className="max-w-4xl mx-auto p-5">
         <div className="space-y-6">
-          <h2 className="text-6xl font-bold text-green-500">About me.</h2>
-          <div className="space-y-4 leading-relaxed text-balance sm:text-lg text-gray-200">
+          <h2 className="text-4xl font-bold text-green-500">About me.</h2>
+          <div className="space-y-4 leading-relaxed text-balance sm:text-lg text-gray-300">
             <p>
               👋 Hello! My name is Md. Toufiq Gilani Rabbu, a Full Stack Web
               Developer with expertise in building dynamic, functional,
