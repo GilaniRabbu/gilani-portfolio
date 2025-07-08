@@ -153,15 +153,11 @@ export default function Skills() {
                         return (
                           <Tooltip key={tech.name}>
                             <TooltipTrigger asChild>
-                              <div className="group cursor-pointer relative">
+                              <div className="cursor-pointer">
                                 <div className="w-12 h-12 rounded bg-gray-800 border border-gray-600 flex items-center justify-center hover:border-gray-500 transition-colors">
                                   <IconComponent
                                     className={`w-6 h-6 ${tech.color}`}
                                   />
-                                </div>
-                                {/* Code-like label */}
-                                <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs text-gray-500 whitespace-nowrap">
-                                  &apos;{tech.name.toLowerCase()}&apos;
                                 </div>
                               </div>
                             </TooltipTrigger>
