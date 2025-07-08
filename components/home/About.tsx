@@ -4,11 +4,11 @@ import ContainerWrapper from "@/components/common/ContainerWrapper";
 
 export default function About() {
   return (
-    <div className="py-10 lg:px-10 bg-[#111111]">
+    <div className="py-10 bg-[#111111]">
       <ContainerWrapper>
         <div className="space-y-6">
           <h2 className="text-4xl font-bold text-green-500">About me.</h2>
-          <div className="space-y-4 leading-relaxed text-balance sm:text-lg text-gray-300">
+          <div className="space-y-4 leading-relaxed max-w-3xl sm:text-lg text-gray-300">
             <p className="flex items-start gap-3">
               <span className="text-2xl">👋</span>
               <span>
