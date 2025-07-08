@@ -43,7 +43,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="py-10 px-5 flex flex-col items-center gap-5 overflow-hidden bg-[#111111] text-white">
+    <footer className="py-10 px-5 flex flex-col items-center gap-5 overflow-hidden bg-[#111111] text-gray-200">
       <div className="flex flex-wrap justify-center gap-1">
         {footerLinks.map((link) => (
           <Link

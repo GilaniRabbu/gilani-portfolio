@@ -33,7 +33,7 @@ export default function Hero() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#111111] text-white py-10 lg:px-10 flex items-center justify-center">
+    <div className="min-h-screen py-10 lg:px-10 bg-[#111111] text-white flex items-center justify-center">
       <ContainerWrapper>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           {/* Lottie Animation */}
@@ -60,7 +60,7 @@ export default function Hero() {
             </div>
 
             {/* Description paragraph */}
-            <div className="text-gray-400 sm:text-lg max-w-3xl">
+            <div className="text-gray-200 sm:text-lg max-w-3xl">
               <span className="text-orange-400">{"<p>"}</span>
               <span className="ml-2">
                 With expertise in modern frontend technologies like React,

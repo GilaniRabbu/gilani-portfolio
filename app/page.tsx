@@ -12,9 +12,9 @@ export default function Home() {
       <Hero />
       <TechSlider />
       <About />
-      <Contact />
       {/* <Portfolio /> */}
       <Skills />
+      <Contact />
       <Footer />
     </>
   );

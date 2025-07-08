@@ -64,14 +64,14 @@ export default function Skills() {
   return (
     <section className="py-10 bg-[#111111]">
       <ContainerWrapper>
-        <div className="space-y-5 text-left md:text-center mb-10 text-white">
-          <h2 className="text-3xl">Skills Of Mine</h2>
-          <p className="max-w-lg md:mx-auto">
+        <div className="space-y-5 text-left md:text-center text-gray-200">
+          <h2 className="text-6xl font-bold text-green-500">Skills Of Mine</h2>
+          <p className="max-w-3xl md:mx-auto sm:text-lg">
             I work with modern tools like React, Next.js, TypeScript, and
             Tailwind CSS to deliver responsive, accessible, and polished user
             experiences.
           </p>
-          <p className="max-w-lg md:mx-auto">
+          <p className="max-w-3xl md:mx-auto sm:text-lg">
             Whether it&apos;s integrating a headless CMS, managing state, or
             building reusable UI components — I focus on writing clean,
             maintainable code that scales.
@@ -80,22 +80,24 @@ export default function Skills() {
         <div className="container mx-auto">
           <IconCloudSlug />
         </div>
-        <div className="">
+        <div>
           <TooltipProvider>
-            <div className="space-y-8">
+            <div className="grid gap-5 grid-cols-1 lg:grid-cols-2">
               {Object.entries(technologies).map(([section, items]) => (
-                <div key={section}>
-                  <h3 className="text-xl font-semibold capitalize mb-4 text-white">
-                    {section}
-                  </h3>
-                  <div className="flex flex-wrap gap-5">
+                <div key={section} className="border rounded">
+                  <div className="border-b">
+                    <h3 className="text-xl font-semibold capitalize p-4 text-white">
+                      {section}
+                    </h3>
+                  </div>
+                  <div className="flex flex-wrap gap-5 p-4">
                     {items.map((tech) => {
                       const IconComponent = tech.icon;
                       return (
                         <Tooltip key={tech.name}>
                           <TooltipTrigger asChild>
                             <div className="group cursor-pointer">
-                              <div className="w-16 h-16 rounded-full shadow flex items-center justify-center bg-white">
+                              <div className="w-16 h-16 rounded flex items-center justify-center bg-white">
                                 <IconComponent
                                   className={`w-8 h-8 ${tech.color}`}
                                 />
@@ -104,7 +106,7 @@ export default function Skills() {
                           </TooltipTrigger>
                           <TooltipContent
                             side="top"
-                            className="relative text-xs px-3 py-2 rounded text-white bg-gray-900"
+                            className="relative text-xs px-3 py-2 rounded text-stone-950 bg-white"
                           >
                             <p>{tech.name}</p>
                           </TooltipContent>

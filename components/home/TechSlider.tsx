@@ -47,7 +47,7 @@ const techStack = [
 
 export default function TechSlider() {
   return (
-    <div className="bg-[#111111] text-white py-10 px-8 md:px-16">
+    <div className="bg-[#111111] text-gray-200 py-10 px-8 md:px-16">
       <div className="w-full max-w-5xl mx-auto flex items-center justify-between gap-10">
         <Marquee gradient={false} speed={60}>
           {techStack.map((tech, index) => (
