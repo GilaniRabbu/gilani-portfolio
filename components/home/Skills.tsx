@@ -62,16 +62,16 @@ const technologies = {
 
 export default function Skills() {
   return (
-    <section className="py-10">
+    <section className="py-10 bg-[#111111]">
       <ContainerWrapper>
-        <div className="space-y-5 text-center text-balance mb-10">
+        <div className="space-y-5 text-left md:text-center mb-10 text-white">
           <h2 className="text-3xl">Skills Of Mine</h2>
-          <p>
+          <p className="max-w-md md:mx-auto">
             I work with modern tools like React, Next.js, TypeScript, and
             Tailwind CSS to deliver responsive, accessible, and polished user
             experiences.
           </p>
-          <p>
+          <p className="max-w-md md:mx-auto">
             Whether it&apos;s integrating a headless CMS, managing state, or
             building reusable UI components — I focus on writing clean,
             maintainable code that scales.
