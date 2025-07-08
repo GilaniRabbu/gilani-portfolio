@@ -81,7 +81,7 @@ export default function Skills() {
           <IconCloudSlug />
         </div>
         <div>
-          <TooltipProvider>
+          {/* <TooltipProvider>
             <div className="grid gap-5 grid-cols-1 lg:grid-cols-2">
               {Object.entries(technologies).map(([section, items]) => (
                 <div key={section} className="border rounded">
@@ -113,6 +113,73 @@ export default function Skills() {
                         </Tooltip>
                       );
                     })}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </TooltipProvider> */}
+          <TooltipProvider>
+            <div className="grid gap-5 grid-cols-1 lg:grid-cols-2 mt-8">
+              {Object.entries(technologies).map(([section, items]) => (
+                <div
+                  key={section}
+                  className="bg-gray-950 border border-gray-700 rounded-lg overflow-hidden font-mono"
+                >
+                  {/* Code block header */}
+                  <div className="bg-gray-800 border-b border-gray-700 px-4 py-2 flex items-center gap-2">
+                    <div className="flex gap-1.5">
+                      <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                      <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                      <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                    </div>
+                    <span className="text-gray-400 text-sm ml-2">
+                      {section}.js
+                    </span>
+                  </div>
+
+                  {/* Code content */}
+                  <div className="p-4">
+                    <div className="text-purple-400 text-sm mb-2">
+                      <span className="text-gray-500">01</span>{" "}
+                      <span className="text-blue-400">const</span>{" "}
+                      <span className="text-yellow-300">{section}</span>{" "}
+                      <span className="text-white">=</span>{" "}
+                      <span className="text-green-400">{"{"}</span>
+                    </div>
+
+                    <div className="flex flex-wrap gap-3 ml-4 mb-2">
+                      {items.map((tech) => {
+                        const IconComponent = tech.icon;
+                        return (
+                          <Tooltip key={tech.name}>
+                            <TooltipTrigger asChild>
+                              <div className="group cursor-pointer relative">
+                                <div className="w-12 h-12 rounded bg-gray-800 border border-gray-600 flex items-center justify-center hover:border-gray-500 transition-colors">
+                                  <IconComponent
+                                    className={`w-6 h-6 ${tech.color}`}
+                                  />
+                                </div>
+                                {/* Code-like label */}
+                                <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 text-xs text-gray-500 whitespace-nowrap">
+                                  &apos;{tech.name.toLowerCase()}&apos;
+                                </div>
+                              </div>
+                            </TooltipTrigger>
+                            <TooltipContent
+                              side="top"
+                              className="bg-gray-800 text-green-400 border border-gray-600 font-mono text-xs"
+                            >
+                              <p>{tech.name}</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        );
+                      })}
+                    </div>
+
+                    <div className="text-green-400 text-sm mt-6">
+                      <span className="text-gray-500">0{items.length + 1}</span>{" "}
+                      <span className="text-green-400">{"}"}</span>
+                    </div>
                   </div>
                 </div>
               ))}
