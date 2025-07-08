@@ -33,11 +33,8 @@ export default function PortfolioCard() {
     <div className="flex flex-wrap justify-center gap-10">
       {cardData.map((card) => (
         <CardContainer key={card.id} className="inter-var">
-          <CardBody className="relative w-auto h-auto rounded-xl p-6 border sm:w-[30rem] group/card bg-white/50 border-black/[0.1] dark:bg-[#2D2726] dark:border-white/[0.2] dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]">
-            <CardItem
-              translateZ="50"
-              className="text-xl font-bold text-gray-300"
-            >
+          <CardBody className="relative w-auto h-auto rounded-xl p-5 border sm:w-[30rem] group/card bg-white/10 border-white/[0.1]">
+            <CardItem translateZ="50" className="text-xl font-bold text-white">
               {card.title}
             </CardItem>
             <CardItem
@@ -61,7 +58,7 @@ export default function PortfolioCard() {
                 {card.frontend.map((category, index) => (
                   <span
                     key={index}
-                    className="px-3 py-1 text-xs font-medium rounded-full bg-black/5 dark:bg-white/10 text-neutral-700 dark:text-neutral-200"
+                    className="px-3 py-1 text-xs font-medium rounded-full bg-white/5 text-gray-300"
                   >
                     {category}
                   </span>
@@ -73,7 +70,7 @@ export default function PortfolioCard() {
                 {card.backend.map((category, index) => (
                   <span
                     key={index}
-                    className="px-3 py-1 text-xs font-medium rounded-full bg-black/5 dark:bg-white/10 text-neutral-700 dark:text-neutral-200"
+                    className="px-3 py-1 text-xs font-medium rounded-full bg-white/5 text-gray-300"
                   >
                     {category}
                   </span>
@@ -86,7 +83,7 @@ export default function PortfolioCard() {
                 as={Link}
                 href={card.link}
                 target="__blank"
-                className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                className="px-4 py-2 rounded-xl text-xs text-white"
               >
                 Visit →
               </CardItem>
@@ -96,7 +93,7 @@ export default function PortfolioCard() {
                   as={Link}
                   href={card.github}
                   target="__blank"
-                  className="px-4 py-2 rounded-xl text-xs font-bold bg-black dark:bg-white dark:text-black text-white"
+                  className="px-4 py-2 rounded-xl text-xs bg-black text-white"
                 >
                   Client
                 </CardItem>
@@ -105,7 +102,7 @@ export default function PortfolioCard() {
                   as={Link}
                   href={card.github}
                   target="__blank"
-                  className="px-4 py-2 rounded-xl text-xs font-bold bg-black dark:bg-white dark:text-black text-white"
+                  className="px-4 py-2 rounded-xl text-xs bg-black text-white"
                 >
                   Server
                 </CardItem>
