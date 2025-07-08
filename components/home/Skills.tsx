@@ -66,12 +66,12 @@ export default function Skills() {
       <ContainerWrapper>
         <div className="space-y-5 text-left md:text-center text-gray-300">
           <h2 className="text-4xl font-bold text-green-500">Skills Of Mine</h2>
-          <p className="max-w-3xl md:mx-auto sm:text-lg">
+          <p className="max-w-4xl md:mx-auto sm:text-lg">
             I work with modern tools like React, Next.js, TypeScript, and
             Tailwind CSS to deliver responsive, accessible, and polished user
             experiences.
           </p>
-          <p className="max-w-3xl md:mx-auto sm:text-lg">
+          <p className="max-w-4xl md:mx-auto sm:text-lg">
             Whether it&apos;s integrating a headless CMS, managing state, or
             building reusable UI components — I focus on writing clean,
             maintainable code that scales.
