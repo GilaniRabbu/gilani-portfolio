@@ -7,7 +7,7 @@ interface ContainerWrapperProps {
 
 const ContainerWrapper = ({ children, className }: ContainerWrapperProps) => {
   return (
-    <div className={`${className} px-5 container mx-auto`}>{children}</div>
+    <div className={`${className} px-5 max-w-7xl mx-auto`}>{children}</div>
   );
 };
 

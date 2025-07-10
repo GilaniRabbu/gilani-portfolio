@@ -36,10 +36,6 @@ export default function Hero() {
     <div className="min-h-screen py-10 lg:px-10 bg-[#111111] text-white flex items-center justify-center">
       <ContainerWrapper>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          {/* Lottie Animation */}
-          <div className="flex justify-center">
-            <LottieAnimation />
-          </div>
           <div className="space-y-6">
             {/* Greeting with HTML tags */}
             <div className="sm:text-lg">
@@ -49,11 +45,18 @@ export default function Hero() {
             </div>
 
             {/* Main heading */}
-            <div className="space-y-2">
-              <h1 className="text-4xl sm:text-5xl font-bold leading-tight">
+            <div className="space-y-0 sm:space-y-2">
+              {/* Line 1 */}
+              <h1 className="text-4xl sm:text-5xl font-bold leading-tight block sm:inline">
                 I&apos;m A{" "}
-                <span className="text-teal-400">{"{Full Stack}"}</span>
               </h1>
+
+              {/* Line 2 */}
+              <h1 className="text-4xl sm:text-5xl font-bold leading-tight text-teal-400 block sm:inline">
+                {"{Full Stack}"}
+              </h1>
+
+              {/* Line 3 */}
               <h1 className="text-4xl sm:text-5xl font-bold leading-tight">
                 Web Developer<span className="text-teal-400">_</span>
               </h1>
@@ -70,6 +73,25 @@ export default function Hero() {
               <span className="text-orange-400 ml-2">{"</p>"}</span>
             </div>
 
+            {/* Buttons */}
+            <div className="flex flex-wrap gap-4 pt-6">
+              <Link
+                className="px-5 py-2 rounded-full font-medium transition-all text-white bg-sky-500 hover:bg-sky-600"
+                href="https://drive.google.com/file/d/1cBfr8qgmER7NW8RDLEqHHAFnFRE0NNqE/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+              >
+                Download Resume
+              </Link>
+              <Link
+                href="#contact"
+                className="px-5 py-2 rounded-full font-medium transition-all text-white bg-sky-500 hover:bg-sky-600"
+              >
+                Hire Me
+              </Link>
+            </div>
+
             {/* Technology icons */}
             <div className="flex items-center space-x-4 pt-4">
               {socialIcons.map(({ id, icon, href }) => (
@@ -78,12 +100,16 @@ export default function Hero() {
                   key={id}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center"
+                  className="w-8 h-8 rounded-full flex items-center justify-center transition-all bg-sky-500 hover:bg-sky-600"
                 >
                   {icon}
                 </Link>
               ))}
             </div>
+          </div>
+          {/* Lottie Animation */}
+          <div className="flex justify-center">
+            <LottieAnimation />
           </div>
         </div>
       </ContainerWrapper>
