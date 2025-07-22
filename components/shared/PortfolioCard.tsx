@@ -10,20 +10,44 @@ const cardData = [
     description:
       "Developed a Full-Stack Restaurant Booking application using the MERN stack.",
     image: "/portfolio/portfolio_1.jpg",
-    frontend: ["Typescript", "Next.js", "Tailwind", "Redux"],
-    backend: ["Express.js", "Mongoose", "MongoDB"],
-    link: "https://restaurant-booking-client-three.vercel.app/",
+    tech: [
+      "Typescript",
+      "Next.js",
+      "Tailwind",
+      "Redux",
+      "Express.js",
+      "Mongoose",
+      "MongoDB",
+    ],
+    link: "https://restaurant-booking-client-three.vercel.app",
     github: "https://github.com/GilaniRabbu/restaurant-booking-client.git",
     server: "https://github.com/GilaniRabbu/restaurant-booking-server.git",
   },
   {
     id: 2,
-    title: "FurStore E-Commerce",
+    title: "FastFix",
     description: "Fully Responsive E-Commerce site built with MERN stack.",
     image: "/portfolio/portfolio_2.jpg",
-    frontend: ["Typescript", "Next.js", "Tailwind"],
-    backend: ["Swiper.js"],
-    link: "https://ecommerce-fur-store.vercel.app/",
+    tech: [
+      "Typescript",
+      "Next.js",
+      "Tailwind",
+      "Redux",
+      "Express.js",
+      "Mongoose",
+      "MongoDB",
+    ],
+    link: "https://fastfix-client.vercel.app",
+    github: "https://github.com/GilaniRabbu/fastfix-client.git",
+    server: "https://github.com/GilaniRabbu/fastfix-server.git",
+  },
+  {
+    id: 3,
+    title: "FurStore E-Commerce",
+    description: "Fully Responsive E-Commerce site built with MERN stack.",
+    image: "/portfolio/portfolio_3.jpg",
+    tech: ["Typescript", "Next.js", "Tailwind", "Swiper.js"],
+    link: "https://ecommerce-fur-store.vercel.app",
     github: "https://github.com/GilaniRabbu/ecommerce-website.git",
   },
 ];
@@ -55,19 +79,7 @@ export default function PortfolioCard() {
             </CardItem>
             <CardItem translateZ="80" className="w-full mt-5">
               <div className="flex flex-wrap gap-2">
-                {card.frontend.map((category, index) => (
-                  <span
-                    key={index}
-                    className="px-3 py-1 text-xs font-medium rounded-full bg-white/5 text-gray-300"
-                  >
-                    {category}
-                  </span>
-                ))}
-              </div>
-            </CardItem>
-            <CardItem translateZ="80" className="w-full mt-5">
-              <div className="flex flex-wrap gap-2">
-                {card.backend.map((category, index) => (
+                {card.tech.map((category, index) => (
                   <span
                     key={index}
                     className="px-3 py-1 text-xs font-medium rounded-full bg-white/5 text-gray-300"

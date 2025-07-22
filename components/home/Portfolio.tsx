@@ -5,7 +5,7 @@ const Portfolio: React.FC = () => {
   return (
     <div className="py-10 bg-[#111111]">
       <ContainerWrapper>
-        <h2 className="text-4xl text-center mb-10 text-green-500">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl text-center mb-20 text-green-500">
           My Projects
         </h2>
         <PortfolioCard />

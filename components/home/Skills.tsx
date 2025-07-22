@@ -65,7 +65,9 @@ export default function Skills() {
     <section className="py-10 bg-[#111111]">
       <ContainerWrapper>
         <div className="space-y-5 text-left md:text-center text-gray-300">
-          <h2 className="text-4xl font-bold text-green-500">Skills Of Mine</h2>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-green-500">
+            Skills Of Mine
+          </h2>
           <p className="max-w-4xl md:mx-auto sm:text-lg">
             I work with modern tools like React, Next.js, TypeScript, and
             Tailwind CSS to deliver responsive, accessible, and polished user

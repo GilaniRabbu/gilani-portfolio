@@ -36,15 +36,17 @@ const Contact: React.FC = () => {
 
   return (
     <div className="py-10 bg-[#111111] overflow-hidden">
-      <h2 className="text-4xl text-center mb-10 text-green-500">Contact Me</h2>
-      <div className="flex md:flex-row flex-col justify-center items-center px-5 py-20 lg:min-h-screen">
+      <h2 className="text-4xl md:text-5xl lg:text-6xl text-center mb-10 text-green-500">
+        Contact Me
+      </h2>
+      <div className="flex flex-col md:flex-row justify-center items-center px-5 py-10">
         <div className="md:w-1/2 w-full mb-5 md:mb-0">
           <MotionTransitionLeft>
             <ContactInfo />
           </MotionTransitionLeft>
         </div>
 
-        <main className="md:w-1/2 xl:w-[40vw] overflow-hidden 2xl:w-[30vw] w-full p-0 md:pt-10 ">
+        <main className="md:w-1/2 xl:w-[40vw] overflow-hidden 2xl:w-[30vw] w-full">
           <MotionTransitionRight>
             <div className="px-12 py-32 rounded-sm relative w-full bg-white">
               <div>
@@ -81,7 +83,7 @@ const Contact: React.FC = () => {
                   required
                   className="w-full py-2 border-b border-gray-300 focus:outline-none focus:border-black"
                 />
-                <div className="flex justify-end">
+                <div className="flex justify-end mt-4">
                   <button
                     type="submit"
                     className={`${
@@ -92,7 +94,7 @@ const Contact: React.FC = () => {
                         : response === "Sending Failed"
                         ? "bg-red-500"
                         : "bg-slate-800"
-                    } text-white w-[150px] py-2 rounded-lg active:scale-[0.96] transition-all`}
+                    } text-white cursor-pointer w-[150px] py-2 rounded-lg active:scale-[0.96] transition-all`}
                   >
                     {response}
                   </button>
@@ -129,7 +131,7 @@ const ContactInfo: React.FC = () => {
         </div>
         <div className="mb-4">
           <h3 className="mb-2">Email</h3>
-          <p>toufiqjilanirabbu7@gmail.com</p>
+          <p>toufiqgilani@gmail.com</p>
         </div>
         <div>
           <h3 className="mb-2">Social Network</h3>

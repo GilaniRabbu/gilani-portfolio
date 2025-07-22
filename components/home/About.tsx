@@ -26,7 +26,7 @@ export default function About() {
                 width={480}
                 height={480}
                 className="rounded-full object-cover border-4"
-                src="/about/logo.png"
+                src="/about/logo.jpg"
                 alt="Author Image"
               />
             </div>
