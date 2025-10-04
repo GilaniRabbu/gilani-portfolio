@@ -41,7 +41,7 @@ const technologies = {
     { name: "TypeScript", icon: SiTypescript },
     { name: "Tailwind CSS", icon: SiTailwindcss },
     { name: "Next.js", icon: SiNextdotjs },
-    { name: "Gatsby", icon: FaBootstrap },
+    { name: "Bootstrap", icon: FaBootstrap },
     { name: "Framer", icon: SiFramer },
     { name: "Redux", icon: SiRedux },
     { name: "Jquery", icon: SiJquery },

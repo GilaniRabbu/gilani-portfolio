@@ -6,6 +6,7 @@ import Form from "@/components/forms/Form";
 import emailjs from "@emailjs/browser";
 import MotionTransitionLeft from "@/components/motion/MotionTransitionLeft";
 import MotionTransitionRight from "@/components/motion/MotionTransitionRight";
+import Link from "next/link";
 
 const Contact: React.FC = () => {
   const [response, setResponse] = useState("Send Message");
@@ -35,7 +36,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <div className="py-10 bg-[#111111] overflow-hidden">
+    <div className="py-10 bg-[#111111] overflow-hidden" id="contact">
       <h2 className="text-4xl md:text-5xl lg:text-6xl text-center mb-10 text-green-500">
         Contact Me
       </h2>
@@ -136,35 +137,28 @@ const ContactInfo: React.FC = () => {
         <div>
           <h3 className="mb-2">Social Network</h3>
           <div className="flex space-x-4">
-            <a
-              href="https://www.facebook.com/GilaniRabbu"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              f
-            </a>
-            <a
-              href="https://x.com/GilaniRabbu"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              x
-            </a>
-            <a
-              href="https://www.linkedin.com/in/toufiq-gilani-rabbu"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              in
-            </a>
-            <a
+            <Link
               href="https://github.com/GilaniRabbu"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white-800"
             >
               g
-            </a>
+            </Link>
+            <Link
+              href="https://www.facebook.com/GilaniRabbu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              f
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/toufiq-gilani-rabbu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              in
+            </Link>
           </div>
         </div>
       </div>

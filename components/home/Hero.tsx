@@ -1,9 +1,4 @@
-import {
-  FaGithub,
-  FaXTwitter,
-  FaLinkedinIn,
-  FaMastodon,
-} from "react-icons/fa6";
+import { FaGithub, FaLinkedinIn, FaCodepen } from "react-icons/fa6";
 import Link from "next/link";
 import LottieAnimation from "@/components/shared/LottieAnimation";
 import ContainerWrapper from "@/components/common/ContainerWrapper";
@@ -22,14 +17,14 @@ export default function Hero() {
     },
     {
       id: 3,
-      href: "https://x.com/GilaniRabbu",
-      icon: <FaXTwitter className="w-4 h-4 text-white" />,
+      href: "https://codepen.io/GilaniRabbu",
+      icon: <FaCodepen className="w-4 h-4 text-white" />,
     },
-    {
-      id: 4,
-      href: "https://mastodon.social/@GilaniRabbu",
-      icon: <FaMastodon className="w-4 h-4 text-white" />,
-    },
+    // {
+    //   id: 4,
+    //   href: "https://mastodon.social/@GilaniRabbu",
+    //   icon: <FaMastodon className="w-4 h-4 text-white" />,
+    // },
   ];
 
   return (
@@ -77,7 +72,7 @@ export default function Hero() {
             <div className="flex flex-wrap gap-4 pt-6">
               <Link
                 className="px-5 py-2 rounded-full font-medium transition-all text-white bg-sky-500 hover:bg-sky-600"
-                href="https://drive.google.com/file/d/1-6K5tNKExOMhGGPsGMIDgwFCMTeIKo2V/view?usp=sharing"
+                href="https://drive.google.com/file/d/1M5622vTkAwoXiHowczjXlkxWThZh2JzW/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 download

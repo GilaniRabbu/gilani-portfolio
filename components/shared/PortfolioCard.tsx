@@ -8,47 +8,69 @@ const cardData = [
     id: 1,
     title: "FoodieBite",
     description:
-      "Developed a Full-Stack Restaurant Booking application using the MERN stack.",
+      "Developed a Full-Stack Restaurant Booking system using the MERN stack.",
     image: "/portfolio/portfolio_1.jpg",
     tech: [
-      "Typescript",
       "Next.js",
       "Tailwind",
       "Redux",
+      "ShadCN UI",
       "Express.js",
       "Mongoose",
       "MongoDB",
     ],
-    link: "https://restaurant-booking-client-three.vercel.app",
-    github: "https://github.com/GilaniRabbu/restaurant-booking-client.git",
-    server: "https://github.com/GilaniRabbu/restaurant-booking-server.git",
+    link: "https://foodiebite.vercel.app",
+    github: "https://github.com/GilaniRabbu/foodiebite.git",
+    server: "https://github.com/GilaniRabbu/foodiebite-server.git",
   },
   {
     id: 2,
     title: "FastFix",
-    description: "Fully Responsive E-Commerce site built with MERN stack.",
+    description:
+      "Fully responsive freelancing platform for service providers and clients.",
     image: "/portfolio/portfolio_2.jpg",
-    tech: [
-      "Typescript",
-      "Next.js",
-      "Tailwind",
-      "Redux",
-      "Express.js",
-      "Mongoose",
-      "MongoDB",
-    ],
+    tech: ["Next.js", "Tailwind", "Redux", "Express.js", "Mongoose", "MongoDB"],
     link: "https://fastfix-client.vercel.app",
     github: "https://github.com/GilaniRabbu/fastfix-client.git",
     server: "https://github.com/GilaniRabbu/fastfix-server.git",
   },
   {
     id: 3,
-    title: "FurStore E-Commerce",
-    description: "Fully Responsive E-Commerce site built with MERN stack.",
+    title: "FurStore",
+    description:
+      "Fully responsive e-commerce platform for seamless online shopping.",
     image: "/portfolio/portfolio_3.jpg",
     tech: ["Typescript", "Next.js", "Tailwind", "Swiper.js"],
-    link: "https://ecommerce-fur-store.vercel.app",
-    github: "https://github.com/GilaniRabbu/ecommerce-website.git",
+    link: "https://ecommerce-furstore.vercel.app",
+    github: "https://github.com/GilaniRabbu/ecommerce-furstore.git",
+  },
+  {
+    id: 4,
+    title: "Dua Ruqyah",
+    description: "Authentic Dua Ruqyah for healing and protection.",
+    image: "/portfolio/portfolio_4.jpg",
+    tech: [
+      "Typescript",
+      "Next.js",
+      "Tailwind",
+      "Redux",
+      "Express.js",
+      "Mongoose",
+      "NoSql",
+    ],
+    link: "https://duaruqyah-client-web.vercel.app",
+    github: "https://github.com/GilaniRabbu/duaruqyah-client-web.git",
+    server: "https://github.com/GilaniRabbu/duaruqyah-server-api.git",
+  },
+  {
+    id: 5,
+    title: "Air Nexa",
+    description:
+      "Smart flight search app for quick and affordable travel booking.",
+    image: "/portfolio/portfolio_5.jpg",
+    tech: ["Typescript", "Next.js", "Tailwind", "Axios", "Amadeus API"],
+    link: "https://airnexa.vercel.app",
+    github: "https://github.com/GilaniRabbu/airnexa-flight-search-web-app.git",
   },
 ];
 
@@ -71,8 +93,8 @@ export default function PortfolioCard() {
             <CardItem translateZ="100" className="w-full mt-4">
               <Image
                 src={card.image || "/placeholder.svg"}
-                height={1000}
-                width={1000}
+                height={768}
+                width={1080}
                 className="w-full object-cover rounded-md group-hover/card:shadow-xl"
                 alt={`${card.title} thumbnail`}
               />

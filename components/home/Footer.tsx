@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import {
   FaGithub,
-  FaXTwitter,
+  FaCodepen,
   FaLinkedinIn,
   FaFacebookF,
   FaMastodon,
@@ -30,9 +30,9 @@ export default function Footer() {
     },
     {
       id: 4,
-      title: "Twitter",
-      link: "https://x.com/GilaniRabbu",
-      icon: <FaXTwitter size={20} />,
+      title: "Codepen",
+      link: "https://codepen.io/GilaniRabbu",
+      icon: <FaCodepen size={20} />,
     },
     {
       id: 5,
