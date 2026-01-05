@@ -25,14 +25,14 @@ const cardData = [
   },
   {
     id: 2,
-    title: "FastFix",
+    title: "Trainer Hub",
     description:
-      "Fully responsive freelancing platform for service providers and clients.",
+      "Fully Responsive Hire A Personal Trainer Platform.",
     image: "/portfolio/portfolio_2.jpg",
     tech: ["Next.js", "Tailwind", "Redux", "Express.js", "Mongoose", "MongoDB"],
-    link: "https://fastfix-client.vercel.app",
-    github: "https://github.com/GilaniRabbu/fastfix-client.git",
-    server: "https://github.com/GilaniRabbu/fastfix-server.git",
+    link: "https://trainer-hub-client.vercel.app/",
+    github: "https://github.com/GilaniRabbu/trainer-hub-client.git",
+    server: "https://github.com/GilaniRabbu/trainer-hub-server.git",
   },
   {
     id: 3,
