@@ -72,7 +72,7 @@ export default function Hero() {
             <div className="flex flex-wrap gap-4 pt-6">
               <Link
                 className="px-5 py-2 rounded-full font-medium transition-all text-white bg-sky-500 hover:bg-sky-600"
-                href="https://drive.google.com/file/d/1M5622vTkAwoXiHowczjXlkxWThZh2JzW/view?usp=sharing"
+                href="https://drive.google.com/file/d/1voCHurv-KEyRDZd5UQ9xrKgSvIAQQ0el/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 download
